@@ -1,5 +1,8 @@
-import Product from "./components/Product";
+import Carousel from "./components/Carousel";
 
-const App = () => <Product />;
-
+const App = () => (
+  <div>
+    <Carousel />
+  </div>
+);
 export default App;
