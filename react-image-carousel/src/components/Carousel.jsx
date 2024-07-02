@@ -18,17 +18,23 @@ const Carousel = () => {
   };
 
   return (
-    <div className="flex justify-center mt-36 mx-36 p-16 bg-blue-200 rounded-xl">
-      <div className="flex justify-between  items-center">
-        <button className="mx-4 bg-green-400 px-6 py-2 rounded-full" onClick={handlePrevious}>
-          Pre
+    <div className="flex flex-row justify-center mt-36">
+      <div className="flex w-1/3 justify-center items-center p-6 bg-gray-100 rounded-xl shadow-lg">
+        <button
+          className="mx-4 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out"
+          onClick={handlePrevious}
+        >
+          Previous
         </button>
         <img
-          alt="Dummy Laptops"
-          className="w-64 rounded-lg mx-4"
+          alt="Product"
+          className="w-64 h-64 object-cover rounded-lg mx-4"
           src={IMAGE_URLS[currentIndex]}
         />
-        <button className="mx-4  bg-green-400 px-6 py-2 rounded-full" onClick={handleNext}>
+        <button
+          className="mx-4 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out"
+          onClick={handleNext}
+        >
           Next
         </button>
       </div>
